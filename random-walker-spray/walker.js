@@ -2,6 +2,7 @@ class Walker {
   constructor(vel) {
     this.vel = vel
     this.pos = createVector(width/2, height/2);
+    this.col = [random(255), random(255), random(255)]
   }
 
   update() {
@@ -10,6 +11,7 @@ class Walker {
   }
 
   draw() {
+    stroke(this.col);
     point(this.pos.x, this.pos.y);
   }
 

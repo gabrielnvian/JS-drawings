@@ -1,13 +1,13 @@
 let walkers;
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(windowWidth, windowHeight - 4);
   background(0);
-  stroke(255);
-  strokeWeight(3);
+  //stroke(255);
+  strokeWeight(2);
   walkers = []
   for (let i = 0; i < 100; i++) {
-    walkers.push(new Walker(10));
+    walkers.push(new Walker(20));
   }
 }
 
